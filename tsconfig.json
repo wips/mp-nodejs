@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5"
+  },
+  "files": [
+    "./node_modules/@types/mocha/index.d.ts",
+    "./node_modules/@types/node/index.d.ts"
+  ],
+  "include": [
+    "config/**/*",
+    "src/**/*.ts",
+    "dev/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -4,8 +4,39 @@
   "description": "a NodeJS mentoring program coding",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "./node_modules/typescript/bin/tsc --watch & nodemon dist",
+    "test": "npm run clean && npm run tsc && npm run mocha",
+    "lint": "eslint src --ext ts",
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "clean": "rm -rf ./dist",
+    "mocha": "mocha ./dist/**/*.test.js",
+    "start": "npm run clean && npm run tsc && node dist"
   },
   "author": "Viktor Molokostov <viktor_molokostov@epam.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^8.0.28",
+    "eslint-import-resolver-node": "^0.3.1",
+    "ts-node": "^3.3.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.5.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/glob": "^5.0.32",
+    "@types/mocha": "^2.2.43",
+    "@types/sinon": "^2.3.4",
+    "@types/sinon-chai": "^2.7.29",
+    "chai": "^4.1.2",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "glob": "^7.1.2",
+    "mocha": "^3.5.3",
+    "nodemon": "^1.12.1",
+    "sinon": "^3.2.1",
+    "sinon-chai": "^2.13.0",
+    "typescript-eslint-parser": "^8.0.0"
+  }
 }
