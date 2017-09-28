@@ -13,6 +13,7 @@
     import/no-extraneous-dependencies: [error, {devDependencies: true}]
     import/extensions: [error, {ts: never}]
     import/no-unresolved: off # I couldn't make it work with *.ts
+    no-reserved-keys: off # TS will take care of it
     no-undef: off # it doesn't work with *.ts files
     no-unused-vars: off # it doesn't work when you import classes and handled by the TSC
     object-curly-spacing: [error, never]

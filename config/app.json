@@ -1,3 +1,5 @@
 {
-  "name": "mp-nodejs"
+  "name": "mp-nodejs",
+  "dirToWatch": "data/",
+  "logLevel": "debug"
 }
