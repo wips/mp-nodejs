@@ -10,14 +10,20 @@
     "tsc": "./node_modules/typescript/bin/tsc",
     "clean": "rm -rf ./dist",
     "mocha": "mocha ./dist/**/*.test.js",
-    "start": "npm run clean && npm run tsc && node dist"
+    "start": "npm run clean && npm run tsc && node dist",
+    "watch": "./node_modules/typescript/bin/tsc -w"
   },
   "author": "Viktor Molokostov <viktor_molokostov@epam.com>",
   "license": "ISC",
   "dependencies": {
+    "@types/minimist": "^1.2.0",
     "@types/node": "^8.0.28",
+    "@types/through2": "^2.0.33",
     "@types/winston": "^2.3.6",
+    "csv2": "^0.1.1",
     "eslint-import-resolver-node": "^0.3.1",
+    "minimist": "^1.2.0",
+    "through2": "^2.0.3",
     "ts-node": "^3.3.0",
     "tsc": "^1.20150623.0",
     "typescript": "^2.5.2",

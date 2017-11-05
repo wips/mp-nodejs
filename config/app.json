@@ -1,5 +1,10 @@
 {
   "name": "mp-nodejs",
   "dirToWatch": "data/",
-  "logLevel": "debug"
+  "logLevel": "debug",
+  "CSV_SEP": ",",
+  "JSON_SEP": ",",
+  "EXTENSION_SEP": ".",
+  "BUNDLE_CSS_NAME": "bundle.css",
+  "EXTERNAL_CSS_URL": "http://www.epam.com/etc/clientlibs/foundation/main.min.fc69c13add6eae57cd247a91c7e26a15.css"
 }
