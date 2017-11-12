@@ -13,7 +13,7 @@ describe('Product', () => {
         });
 
         it('logs itself', () => {
-            new Product(); // eslint-disable-line no-new
+            new Product('1'); // eslint-disable-line no-new
             expect(consoleLog).calledWith('Product module');
         });
 

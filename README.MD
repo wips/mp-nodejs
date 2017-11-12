@@ -39,3 +39,11 @@ Examples:
    * Provide an ability to import this program as a module (task #2f)
    
         ```$ node dist/utils```                  
+
+## HoweWork #4
+Compile and run the app:
+``` 
+    $ npm run dev 
+```
+
+In a browser go to `http://localhost:8080/api/products/:id/reviews` etc.

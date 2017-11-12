@@ -1,8 +1,21 @@
 class User {
     static MODULE_NAME = 'User';
+    private id: string;
 
-    constructor() {
+    constructor(id: string) {
+        this.id = id;
         User.logMe(User.MODULE_NAME);
+    }
+
+    getId() {
+        return this.id;
+    }
+
+    serialize(): EntityDTO {
+        return {
+            id: this.id,
+            'class': User.MODULE_NAME
+        };
     }
 
     static logMe(myName: string): void {
